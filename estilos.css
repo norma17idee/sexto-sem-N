@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+   background: url(imagenes/fondo3.jpg);
+    color: white;
+    margin: 10px;
+    
+}
+.navegacion{
+    width: 600px;
+    margin: 30px auto;
+    background: black;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu >li{
+    position: relative;
+    display: inline-block;
+}
+.menu> li>a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-family: "Arial";
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: #CE7D35;
+    transition: all .3s;
+}
+/*Submenu*/
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 130%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: "Arial";
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    visibility:visible;
+    opacity: 1;
+}
+/*general*/
+div.general
+{
+    margin: 10px;
+    padding: 10px;
+}
+/* header */
+h1 /*este estaba arriba, pero para mayor orden, hace lo mismo*/
+{
+    font-family:sans-serif;
+    text-align: center;
+    font-size: 80px;
+}
+h2
+{
+    font-family: "Arial";
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin-top:5px;
+}
+h3
+{
+   font-family: "Arial";
+    text-align:justify;
+    font-size: 20px;
+    color: black; 
+}
+/*body*/
+div.body
+{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 95%;
+    height: 450px;
+    border: 20px;
+    padding: 5px; 
+    font-size: 25px;  
+    background-color:rgba(206, 193, 238, 1); /*está es la otra forma de cambiar el color, es lo mismo, pero diferente codificación*/
+    font-family:"Arial";        
+    font-size: 25px;
+}
+/*tableros*/
+div.tablero{
+    background-color: #fff;
+    float: left;
+    text-align:center;
+    margin: 1.5%;
+    width: 30%; /*Estos tipos de porcentajes son para que cuando se haga más grande o más chica la ventana se acomode al orden y no haya fallos, peuden dejarlos en px y no hay problema*/
+    height: 400px;
+    border: 50px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*Imgenes*/
+div.tablero img{
+    width: 90%; /*acá mueve el tamaño de la imagen respecto al box del tablero, a un 90% pueden variarlo para que sea mayor o menoe*/
+}
+/*Por cierto les cambie que sus 3 tableros sean class=tablero, para que no tengan que estar moviendo en todos y cada uno, es más sencillo todo englobados en uno*/
+/*Así que estos realmente no sirven de nada, pero los deje para explicarles*/
+/*.tablero2 {
+    background: #533E6A;
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    margin-left: 470px;
+}
+.tablero3 {
+    background: #533E6A;
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    margin-left: 950px;
+    margin-right: 20px;
+    float: right;
+}*/
